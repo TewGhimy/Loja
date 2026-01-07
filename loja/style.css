@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap");
+img {
+  width: 200px;
+}
+.imagem-carrossel {
+  height: 400px;
+
+  object-fit: cover;
+}
+.imagem1 {
+  object-position: 0 10%;
+  /* Aqui o object-position troca a posição do elemento mas depende de ter o object fit */
+}
+.imagem2 {
+  object-position: 0 3%;
+}
+
+.imagem3 {
+  object-position: 0 5%;
+}
+header h1 {
+  color: #a34343;
+}
+
+aside img {
+  width: 500px;
+}
+.titulohead {
+  font-family: "Pacifico", cursive;
+}
+
+.logo {
+  border: 3px black solid;
+}
