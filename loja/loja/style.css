@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap");
+* {
+  font-family: "Montserrat";
+}
+
+.cor_de_fundo {
+  background-color: #a34343;
+  color: white;
+}
+.borda {
+  border: 1px #a34343 solid;
+  margin-bottom: 35px;
+}
+.cor_do_texto {
+  color: #a34343;
+}
+img {
+  width: 200px;
+}
+.imagem-carrossel {
+  height: 400px;
+
+  object-fit: cover;
+}
+.imagem1 {
+  object-position: 0 10%;
+  /* Aqui o object-position troca a posição do elemento mas depende de ter o object fit */
+}
+.imagem2 {
+  object-position: 0 3%;
+}
+
+.imagem3 {
+  object-position: 0 5%;
+}
+
+.titulo_principal {
+  color: #a34343;
+}
+
+aside img {
+  width: 500px;
+}
+.titulohead {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.logo {
+  border: 3px black solid;
+  font-family: "Pacifico", cursive;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.h1_hero {
+  /* font-family: "Montserrat"; */
+
+  font-family: "Pacifico";
+}
+
+.borda_card {
+  border: 1px #a34343 solid;
+}
+#cards {
+  padding-top: 20px;
+}
+figure {
+  margin: 0;
+}
+
+.footer-clean {
+  border-top: 1px solid rgba(163, 67, 67, 0.25);
+  background: #fff;
+}
+
+.footer-title {
+  color: #a34343;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.footer-muted {
+  color: #6c757d;
+}
+
+.footer-link {
+  color: #a34343;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
