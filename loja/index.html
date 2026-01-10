@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>clean model</title>
-    <link rel="stylesheet" href="style.css" />
+   
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -17,12 +18,15 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <header>
+      <!-- Navbar -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand titulohead logo" href="#"><strong>Clean top</strong></a>
+
+          <a class="navbar-brand logo" href="#"><strong>Clean top</strong></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -31,9 +35,10 @@
             aria-controls="navbarText"
             aria-expanded="false"
             aria-label="Toggle navigation"
-          >
+          > 
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -49,64 +54,220 @@
                 <a class="nav-link" href="#">Sobre nós</a>
               </li>
             </ul>
+
             <span class="navbar-text">
               <h4><strong>Seu varejo digital</strong></h4>
             </span>
+
           </div>
         </div>
       </nav>
-      <h1 class="titulohead display-3 text-center">Aqui você vale muito</h1>
+      <h1 class="titulo_principal display-3 text-center cor_do_texto">Aqui você vale muito</h1>
     </header>
-
+    <!-- Carrosel do site -->
+     <main>
     <aside>
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active imagem2 imagem-carrossel" data-bs-interval="10000">
-      <img src="imagens/home/vestido_laranja.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h1 class="titulohead">Vestido Mega elegante colonial</h1>
-        
+
+      <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active imagem2 imagem-carrossel" data-bs-interval="10000">
+        <figure>
+          <img src="imagens/home/vestido_laranja.png" class="d-block w-100" alt="Moça com vesido belo laranja">
+        </figure>
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="titulohead"><strong>Vestido Mega elegante colonial</strong></h1>
+          
+        </div>
+      </div>
+      <div class="carousel-item imagem_carrosel" data-bs-interval="2000">
+        <figure>
+          <img src="imagens/home/roupa_branca2.png" class="d-block w-100 imagem1  imagem-carrossel" alt="...">
+        </figure>
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="titulohead "><strong>Off white de verão</strong></h1>
+          
+        </div>
+      </div>
+      <div class="carousel-item imagem3 imagem-carrossel" >
+
+        <figure>
+          <img src="imagens/home/em_casa.webp" class="d-block w-100" alt="..."></figure>
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="titulohead"><strong>O melhor de você</strong></h1>
+        </div>
+      </div>
+     </div>
+
+      <div class="botoes">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
       </div>
     </div>
-    <div  class="carousel-item" data-bs-interval="2000">
-      <!-- o Atributo (data-bs-interval) diz quanto tempo irá demorar para trocar de imagem-->
-      <img src="imagens/home/roupa_branca2.png" class="d-block w-100 imagem1  imagem-carrossel" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h1 class="titulohead">Off white de verão</h1>
-        
-      </div>
-    </div>
-    <div class="carousel-item imagem3 imagem-carrossel" >
-      <img src="imagens/home/em_casa.webp" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h1 class="titulohead">O melhor de você</h1>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
   </aside>
-</div>
+        <!-- Texto de vendas -->
+      <div>
+        <h1 class="text-center h1_hero pt-5 cor_do_texto">Estilos para se sentir bem!</h1>
+         <!-- A classe text-center centraliza o texto em todos os view ports -->
+        <p class="text-center text-secondary pb-5">Nossas roupas irão dar uma cara nova para você e para o seu armário, seja clean.</p>
       </div>
-      <h1 class="text-center">Estilos para se sentir bem!</h1>
-       <!-- A classe text-center centraliza o texto em todos os view ports -->
-      <p class="text-center text-secondary">Nossas roupas irão dar uma cara nova para você e para o seu armário, seja clean.</p>
-    <div id="mae">
-      <div id="d1">item1</div>
-      <div id="d2">item2</div>
-      <div id="d3">item3</div>
-      <div id="d4">item4</div>
+      <!-- Cards -->
+
+    <section id="cards" class="container bg-light py-4 rounded-3">
+      <div class="row g-4">
+       <article id="d1" class="col-md-4">
+        <div class="card borda mx-auto" style="width: 18rem;">
+          <figure><img src="imagens/home/vestido_laranja.png" class="card-img-top" alt="Bela moça de vestido laranja"></figure>
+        <div class="card-body">
+        <h4 class=" cor_do_texto card-title ">Vestido Mega Elegante Colonial</h4>
+        <p class="card-text">Vestido longo de silhueta ajustada, confeccionado em tecido de caimento fluido..</p>
+       <a href="checkout.html"
+           class="cor_de_fundo btn js-buy"
+         data-product-id="vestido-laranja" target="_blank">
+        Comprar agora!
+          </a>
+        </div>
+        </div>
+          </article>
+          
+
+      <article id="d2" class="col-md-4">
+        <div class="card borda mx-auto" style="width: 18rem;">
+          <figure><img src="imagens/home/roupa_branca.1050.700.png" class="card-img-top" alt="um look off white"></figure>
+          <div class="card-body borda_card">
+           <h4 class=" cor_do_texto card-title" >Off White de Verão</h4>
+         <p class="card-text">Roupa moderna para fugir dos padrões, e se permitir viver além dos limites, com beleza e originalidade dessa roupa agora você pode.</p>
+          <a href="checkout.html"
+            class="cor_de_fundo btn js-buy"
+            data-product-id="vestido-laranja" target="_blank">
+            Comprar agora!
+            </a>
+        </div>
+        </div>
+      </article>
+
+
+      <article id="d3" class="col-md-4">
+        <div class="card borda mx-auto" style="width: 18rem;">
+          <figure><img src="imagens/home/em_casa.webp" class="card-img-top" alt="..."></figure>
+          <div class="card-body borda_card">
+           <h4 class=" cor_do_texto card-title" >Américan Custer</h4>
+         <p class="card-text">Essa é a nossa mais nova proposta, trazendo sutileza e modestia essa roupas veste e quaquer ocasião e que uma mulher elegante vá estar.</p>
+           <a href="checkout.html"
+               class="cor_de_fundo btn js-buy"
+                data-product-id="vestido-laranja" target="_blank">
+                 Comprar agora!
+                </a>
+        </div>
+        </div>
+      </article>
+
+  
+      <article id="d4" class="col-md-4">
+        <div class="card borda mx-auto" style="width: 18rem;">
+          <img src="imagens/home/vestidoo.png" class="card-img-top" alt="...">
+          <div class="card-body borda_card">
+           <h4 class=" cor_do_texto card-title" >Vestido florido</h4>
+         <p class="card-text">Vestido leve com estampa floral delicada, 
+              em tons suaves e femininos, perfeito para dias quentes.
+              Possui alças finas com amarração, busto franzido e saia fluida que traz movimento e charme..</p>
+          <a href="checkout.html"
+           class="cor_de_fundo btn js-buy"
+              data-product-id="vestido-laranja" target="_blank">
+               Comprar agora!
+                </a>
+          </div>
+        </div>
+      </article>
+
+      <article id="d5" class="col-md-4"> 
+        <div class="card borda mx-auto" style="width: 18rem;">
+          <img src="imagens/home/naloja.png" class="card-img-top" alt="...">
+          <div class="card-body borda_card">
+           <h4 class=" cor_do_texto card-title" >Vestido Jardim de Verão</h4>
+         <p class="card-text">Vestido midi verde com estampa floral delicada, alças finas com amarração e caimento leve, ideal para um visual fresco e romântico.</p>
+           <a href="checkout.html"
+              class="cor_de_fundo btn js-buy"
+            data-product-id="vestido-laranja">
+            Comprar agora!
+              </a>
+          </div>
+          </div>
+        </article>
+
+  
+      <article id="d6" class="col-md-4"> 
+          <div class="card borda mx-auto" style="width: 18rem;">
+          <img src="imagens/home/de_vestido_na_loja.png" class="card-img-top" alt="...">
+          <div class="card-body borda_card">
+           <h4 class=" cor_do_texto card-title" >Card title</h4>
+         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+           <a href="#" class="cor_de_fundo btn ">Go somewhere</a>
+      
+              </div>
+            </div>
+           </article>
+          </div>
+       </section>
+      </main>
+
+      <!-- footer -->
+       <footer class="footer-clean mt-5">
+  <div class="container py-4">
+    <div class="row align-items-center gy-3">
+      
+      <div class="col-md-6 text-center text-md-start">
+        <p class="mb-0 footer-title">Clean top</p>
+        <small class="footer-muted">
+          © 2026 • Desenvolvido por <strong>tal do Lucas xd xd</strong>
+        </small>
+      </div>
+
+      <div class="col-md-6 text-center text-md-end">
+        <small class="footer-muted d-block">
+          Contato: <a class="footer-link" href="mailto:lucasderreira@gmail.com">lucasderreira@gmail.com</a>
+        </small>
+
+        <a class="footer-link" href="https://github.com/SEU_USUARIO" target="_blank" rel="noopener">
+          Meu GitHub
+        </a>
+      </div>
+
     </div>
+  </div>
+</footer>
+
+  <script type="module">
+        import { products } from "./js/products.js";
+        import { addToCart } from "./js/cart.js";
+
+        document.querySelectorAll(".js-buy").forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            const id = btn.dataset.productId;
+            const product = products.find((p) => p.id === id);
+
+            if (!product) {
+              alert("Produto não encontrado.");
+              return;
+            }
+
+            addToCart(product, 1);
+            window.location.href = btn.getAttribute("href"); // checkout.html
+          });
+        });
+    </script>
+
   </body>
 </html>

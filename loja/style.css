@@ -1,7 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap");
-img {
-  width: 200px;
+* {
+  font-family: "Montserrat";
 }
+
+.cor_de_fundo {
+  background-color: #a34343;
+  color: white;
+}
+
+.cor_de_fundo:hover {
+  background-color: #8e3838;
+  color: white;
+}
+
+.borda {
+  border: 1px #a34343 solid;
+  margin-bottom: 35px;
+}
+.cor_do_texto {
+  color: #a34343;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .imagem-carrossel {
   height: 400px;
 
@@ -18,7 +42,8 @@ img {
 .imagem3 {
   object-position: 0 5%;
 }
-header h1 {
+
+.titulo_principal {
   color: #a34343;
 }
 
@@ -26,9 +51,83 @@ aside img {
   width: 500px;
 }
 .titulohead {
-  font-family: "Pacifico", cursive;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .logo {
   border: 3px black solid;
+  font-family: "Pacifico", cursive;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.h1_hero {
+  /* font-family: "Montserrat"; */
+
+  font-family: "Pacifico";
+}
+
+.borda_card {
+  border: 1px #a34343 solid;
+}
+#cards {
+  padding-top: 20px;
+}
+figure {
+  margin: 0;
+}
+
+#cards .card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#cards .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+#cards .card {
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#cards .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+#cards .btn {
+  margin-top: auto; /* empurra o botão pro final do card */
+}
+
+.footer-clean {
+  border-top: 1px solid rgba(163, 67, 67, 0.25);
+  background: #fff;
+}
+
+.footer-title {
+  color: #a34343;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.footer-muted {
+  color: #6c757d;
+}
+
+.footer-link {
+  color: #a34343;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-clean {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
